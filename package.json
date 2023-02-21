@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "stylelint": "^15.2.0",
+    "stylelint-config-htmlacademy": "^1.1.4",
+    "stylelint-config-standard": "^30.0.1"
+  },
+  "dependencies": {
+    "swiper": "^9.0.5"
+  }
+}
