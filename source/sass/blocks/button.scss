@@ -1,0 +1,28 @@
+.button {
+  width: 141px;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 0;
+  border-radius: 4px;
+  font-family: $basic-font-family;
+  font-weight: 400;
+  text-align: center;
+  color: $white;
+  background-color: $lilac;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  :focus {
+    background-color: #9070ec;
+  }
+
+  &:active {
+    background-color: #593cac;
+  }
+
+  &:disabled {
+    background-color: #bdbdbd;
+  }
+}
