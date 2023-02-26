@@ -1,13 +1,16 @@
 .catalog {
   padding-top: 50px;
+  padding-bottom: 44px;
   background-color: $background-grey;
 
   @media (min-width: $tablet-width) {
     padding-top: 80px;
+    padding-bottom: 90px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 100px;
+    padding-bottom: 120px;
   }
 }
 
@@ -42,8 +45,10 @@
 }
 
 .catalog__wrapper {
-  display: flex;
-  justify-content: space-between;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .catalog__filter {
@@ -55,7 +60,29 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0px;
+    margin-right: 30px;
+    padding-top: 10px;
   }
 }
 
-.catalog__product-wrapper {}
+.catalog__sorting {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.catalog__product-list {
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+
+  }
+}
