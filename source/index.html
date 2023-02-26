@@ -29,7 +29,7 @@
     </div>
 
       <!-- Пользовательская навигация -->
-      <nav class="main-header__navigation main-navigation main-navigation--opened">
+      <nav class="main-header__navigation main-navigation main-navigation--closed main-navigation--nojs">
         <ul class="main-navigation__list  user-navigation">
           <li class="user-navigation__item">
             <a class="user-navigation__link" href="#">
@@ -79,62 +79,79 @@
 
           <!-- 1 слайд -->
 
-          <div class="swiper-slide slider__card">
+          <div class="swiper-slide slider__card slider__card--first">
+            <div class="slider__wrapper container">
+              <div class="slider__image-wrapper">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/desktop/flat_white_img.png 1x, img/retina/flat_white_img-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/tablet/flat_white_img-1.png 1x, img/index/retina/flat_white_img-tablet@2x.png 2x">
             <img class="slider__image" src="img/mobile/flat_white_img-1.png" srcset="img/retina/flat_white_img-mobile@2x.png 2x" width="280" height="280" alt="Кофе Декаф Флэт Уайт">
           </picture>
-            <span class="slider-sticker sticker">Новинка!</span>
+        </div>
+        <div class="slider__content">
+            <span class="slider__sticker">Новинка!</span>
             <h3 class="slider__title">Декаф Флэт Уайт</h3>
-            <p class="slider__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-          <div>
+            <p class="slider__text">Свежесваренный кофе без кофеина из Эфиопии <br> с натуральным фермерским молоком — то, что нужно <br> для расслабления после тяжёлого рабочего дня</p>
+          <div class="slider__button-wrapper">
             <div class="slider__price-wrapper">
-            <span class="slider__old-price">295</span>
+            <del class="slider__old-price">295</del>
             <span class="slider__new-price">225</span>
           </div>
           <a class="slider__button button">Заказать</a>
         </div>
+      </div>
+      </div>
           </div>
 
           <!-- 2слайд -->
 
-          <div class="swiper-slide">
+          <div class="swiper-slide slider__card slider__card--second">
+            <div class="slider__wrapper container">
+              <div class="slider__image-wrapper">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/desktop/lavender_img.png 1x, img/retina/lavender_img-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/tablet/lavender_img-1.png 1x, img/index/retina/lavender_img-tablet@2x.png 2x">
-            <img class="slider__image" src="img/mobile/lavender_img-1.png" srcset="img/retina/lavender_img-mobile@2x.png 2x" width="280px" height="280px" alt="Кофе Лавандовый Латте">
+            <img class="slider__image" src="img/mobile/lavender_img-1.png" srcset="img/retina/lavender_img-mobile@2x.png 2x" width="280" height="280" alt="Кофе Лавандовый Латте">
           </picture>
-            <span class="slider-sticker sticker">Новинка!</span>
+        </div>
+        <div class="slider__content">
+            <span class="slider__sticker">Новинка!</span>
             <h3 class="slider__title">Лавандовый Латте</h3>
-            <p lass="slider__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-          <div>
+            <p class="slider__text">Свежесваренный кофе без кофеина из Эфиопии <br> с натуральным фермерским молоком — то, что нужно <br> для расслабления после тяжёлого рабочего дня</p>
+          <div class="slider__button-wrapper">
             <div class="slider__price-wrapper">
-            <span class="slider__old-price">285&#8381</span>
-            <span class="slider__new-price">265&#8381</span>
+            <span class="slider__old-price">285</span>
+            <span class="slider__new-price">265</span>
           </div>
           <a class="slider__button button">Заказать</a>
+          </div>
+        </div>
         </div>
           </div>
 
           <!-- 3 слайд -->
 
-          <div class="swiper-slide">
+          <div class="swiper-slide slider__card slider__card--third">
+            <div class="slider__wrapper container">
+              <div class="slider__image-wrapper">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/desktop/espresso_img.png 1x, img/retina/espresso_img-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/tablet/espresso_img-1.png 1x, img/index/retina/espresso_img-tablet@2x.png 2x">
-            <img class="slider__image" src="img/mobile/espresso_img-1.png" srcset="img/retina/espresso_img-mobile@2x.png 2x" width="280px" height="280px" alt="Кофе Тройной Эспрессо">
+            <img class="slider__image" src="img/mobile/espresso_img-1.png" srcset="img/retina/espresso_img-mobile@2x.png 2x" width="280" height="280" alt="Кофе Тройной Эспрессо">
           </picture>
-            <span class="slider-sticker sticker">Новинка!</span>
+        </div>
+        <div class="slider__content">
+            <span class="slider__sticker">Новинка!</span>
             <h3 class="slider__title">Тройной Эспрессо</h3>
-            <p lass="slider__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-          <div>
+            <p class="slider__text">Свежесваренный кофе без кофеина из Эфиопии <br> с натуральным фермерским молоком — то, что нужно <br> для расслабления после тяжёлого рабочего дня</p>
+          <div class="slider__button-wrapper">
             <div class="slider__price-wrapper">
-            <span class="slider__old-price">395&#8381</span>
-            <span class="slider__new-price">375&#8381</span>
+            <span class="slider__old-price">395</span>
+            <span class="slider__new-price">375</span>
           </div>
           <a class="slider__button button">Заказать</a>
         </div>
+      </div>
           </div>
         </div>
 
@@ -146,23 +163,23 @@
       </div>
     </section>
     <!-- Преимущества -->
-    <section class="main-index-container__features features">
+    <section class="main-index-container__features features container">
       <h2 class="features__title">Преимущества</h2>
       <p class="features__text">Главные причины выбрать Drink2Go</p>
       <ul class="features__list">
-        <li class="features__item">
+        <li class="features__item features__item--fast">
           <h3 class="features__subtitle">Скорость</h3>
           <p class="features__description">Готовый напиток всегда под рукой — просто открой банку</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--comfort">
           <h3 class="features__subtitle">Удобство</h3>
           <p class="features__description">Легко помещается и в карман, и в маленькую сумочку</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--cheerfulness">
           <h3 class="features__subtitle">Бодрость</h3>
           <p class="features__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--ecology">
           <h3 class="features__subtitle">Экологичность</h3>
           <p class="features__description">Вся упаковка сделана
             из перерабатываемых материалов</p>
@@ -171,31 +188,34 @@
     </section>
     <!-- Каталог -->
     <section class="main-index-container__catalog catalog">
+      <div class="container">
       <h2 class="catalog__title">Каталог</h2>
       <p class="catalog__subtitle">Каталог кофейных напитков</p>
+      <div class="catalog__wrapper">
       <form class="catalog__filter filter">
-        <!-- Рендж -->
-        <fieldset class="filter__fieldset">
-          <legend class="filter__title">Цена</legend>
-          <div class="filter__range range">
+        <div class="filter__wrapper">
+        <fieldset class="filter__fieldset filter__fieldset--range range-group">
+          <legend class="filter__title range-group__title">Цена</legend>
+          <div class="range-group__range range">
             <div class="range__scale">
-              <div class="range__bar" style="left: 0; width: 119px">
+              <div class="range__bar">
                 <button class="range__toogle range__toogle--min" type="button"></button>
                 <button class="range__toogle range__toogle--max" type="button"></button>
               </div>
             </div>
-            <div class="range-wrapper-inputs">
-                <input class="range-input" type="number" value="0" name="min-price">
-                <input class="range-input range-input-before" type="number" value="900" name="min-price">
+            <div class="range__wrapper-inputs">
+                <input class="range__input" type="number" value="0" name="min-price">
+                <div class="range__input-separator"></div>
+                <input class="range__input range__input--before" type="number" value="900" name="min-price">
             </div>
           </div>
         </fieldset>
         <fieldset class="filter__fieldset filter__fieldset--radio-group radio-group">
-          <legend class="filter__title">Наличие молока</legend>
+          <legend class="filter__title radio-group__title">Наличие молока</legend>
           <ul class="filter__list radio-group__list">
             <li class="radio-group-item radio-field">
               <label class="radio-field__control">
-                <input class="radio-field__input visually-hidden" type="radio" name="program-group__input" value="slim"
+                <input class="radio-field__input visually-hidden" type="radio" name="program-group__input" value="no-matter"
                   checked>
                 <span class="radio-field__control-mark"></span>
                 <span class="radio-field__control-label">Неважно</span>
@@ -203,58 +223,56 @@
             </li>
             <li class="radio-group-item radio-field">
               <label class="radio-field__control">
-                <input class="radio-field__input visually-hidden" type="radio" name="program-group__input" value="slim"
-                  checked>
+                <input class="radio-field__input visually-hidden" type="radio" name="program-group__input" value="animal-origin">
                 <span class="radio-field__control-mark"></span>
                 <span class="radio-field__control-label">Только животное</span>
               </label>
             </li>
             <li class="radio-group-item radio-field">
               <label class="radio-field__control">
-                <input class="radio-field__input visually-hidden" type="radio" name="program-group__input" value="slim"
-                  checked>
+                <input class="radio-field__input visually-hidden" type="radio" name="program-group__input" value="
+                plant origin">
                 <span class="radio-field__control-mark"></span>
                 <span class="radio-field__control-label">Только растительное</span>
               </label>
             </li>
             <li class="radio-group-item radio-field">
               <label class="radio-field__control">
-                <input class="radio-field__input visually-hidden" type="radio" name="program-group__input" value="slim"
-                  checked>
+                <input disabled class="radio-field__input visually-hidden" type="radio" name="program-group__input" value="without-milk">
                 <span class="radio-field__control-mark"></span>
-                <span class="radio-field__control-label" aria-disabled="true">Без молока</span>
+                <span class="radio-field__control-label">Без молока</span>
               </label>
             </li>
             </ul>
         </fieldset>
-        <fieldset class="filter__fieldset filter__fieldset--toogle toggle">
-          <legend class="filter__title">Страна произрастания</legend>
-          <ul class="toggle-list">
-          <li class="toggle-item">
+        <fieldset class="filter__fieldset filter__fieldset--toogle toggle-group">
+          <legend class="filter__title  toggle-group__title">Страна произрастания</legend>
+          <ul class="toggle-group__list">
+          <li class="toggle-group__item toggle">
             <label class="toggle__title" for="toggle">
             <input type="checkbox" name="toggle" id="toggle" class="toggle__input" />
            Бразилия
           </label>
         </li>
-        <li class="toggle-item">
-          <label class="toggle__title" for="toggle">
-          <input type="checkbox" name="toggle" id="toggle" class="toggle__input" />
+        <li checked class="toggle-group__item toggle">
+          <label checked class="toggle__title" for="toggle">
+          <input checked type="checkbox" name="toggle" id="toggle" class="toggle__input" />
          Эфиопия
         </label>
       </li>
-      <li class="toggle-item">
+      <li class="toggle-group__item toggle">
         <label class="toggle__title" for="toggle">
         <input type="checkbox" name="toggle" id="toggle" class="toggle__input" />
        Колумбия
       </label>
     </li>
-    <li class="toggle-item">
+    <li class="toggle-group__item">
       <label class="toggle__title" for="toggle">
       <input type="checkbox" name="toggle" id="toggle" class="toggle__input" />
      Коста-Рика
     </label>
   </li>
-  <li class="toggle-item">
+  <li class="toggle-group__item">
     <label class="toggle__title" for="toggle">
     <input type="checkbox" name="toggle" id="toggle" class="toggle__input" disabled />
    Перу
@@ -262,16 +280,21 @@
 </li>
         </ul>
         </fieldset>
-        <button class="filter__button button" type="submit">Применить фильтр</button>
+      </div>
+        <div class="filter__buttons-wrapper">
+        <button class="filter__button filter__button--submit button" type="submit">Применить фильтр</button>
         <button class="filter__button filter__button--reset button" type="reset">Сбросить фильтр</button>
+      </div>
       </form>
+      <div class="catalog__product-wrapper">
       <div class="catalog__sorting sorting">
-        <p class="sorting-title">Сортировка:</p>
+        <p class="sorting__title">Сортировка:</p>
         <select class="sorting__control">
             <option value="popular">По умолчанию</option>
             <option value="price">Цена</option>
             <option value="sale">Скидка</option>
           </select>
+      </div>
 <ul class="catalog__product-list product-list">
   <li class="product-list__item product-card">
 <img class="product-card__image">
@@ -353,6 +376,9 @@
             <a class="pagination__link pagination__link--next" href="#">
               <span class="pagination__text">Вперёд</span></a>
           </div>
+        </div>
+        </div>
+      </div>
     </section>
 	 <section class="main-index-container__map map">
 		<h2 class="visually-hidden">Карта</h2>
@@ -361,7 +387,7 @@
   </main>
   <footer class="main-footer">
 	 <a class="logo logo--footer" href="index.html" aria-label="Главная страница">
-            <img class="logo__img" src="" width="" height="" alt="Логотип магазина кофейных напитков Drink2go">
+            <img class="logo__img" src="#" width="#" height="#" alt="Логотип магазина кофейных напитков Drink2go">
           </a>
 			 <ul class="main-footer__social-list social-list">
 				<li class="social-list__item">
@@ -408,5 +434,6 @@
 		 </section>
 		</div>
   </footer>
+  <script src="js/toggle.js"></script>
 </body>
 </html>

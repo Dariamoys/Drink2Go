@@ -1,0 +1,19 @@
+.sorting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+  }
+}
+
+.sorting__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
+}

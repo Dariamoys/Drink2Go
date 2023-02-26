@@ -1,0 +1,104 @@
+.range__scale {
+  position: relative;
+  margin-bottom: 36px;
+  height: 2px;
+  width: 280px;
+  background-color: #e2e2e2;
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+  }
+}
+
+.range__bar {
+  position: absolute;
+  height: 4px;
+  width: 240px;
+  background-color: #9070ec;
+
+  @media (min-width: $tablet-width) {
+    width: 190px;
+  }
+}
+
+.range__toogle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: $white;
+  border: 2px solid #9070ec;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range__toogle--min {
+  left: 0px;
+  top: calc(50% - 24px/2 + 0.45px);
+}
+
+.range__toogle--max {
+  right: 0;
+  top: calc(50% - 24px/2 + 0.45px);
+}
+
+.range__wrapper-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.range__input {
+  display: inline-block;
+  padding: 8px 10px;
+  width: 118px;
+  height: 38px;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #bdbdbd;
+  text-align: center;
+  appearance: textfield;
+  border: 2px solid #9070ec;
+  border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 93px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+  }
+}
+
+.range__input--before {
+  color: $black;
+}
+
+.range__input::-webkit-outer-spin-button,
+.range__input::-webkit-inner-spin-button {
+  margin: 0;
+  padding: 0;
+  appearance: none;
+}
+
+.range__input-separator {
+  width: 9px;
+  height: 2px;
+  background-color: #bdbdbd;
+
+  @media (min-width: $tablet-width) {
+    width: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 10px;
+  }
+}

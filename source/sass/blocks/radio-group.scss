@@ -1,0 +1,19 @@
+.radio-group {
+  border: none;
+}
+
+.radio-group__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.radio-group__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.radio-group-item:not(:last-of-type) {
+  margin-bottom: 23px;
+}

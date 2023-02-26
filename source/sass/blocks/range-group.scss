@@ -1,0 +1,17 @@
+.range-group {
+  border: none;
+}
+
+.range-group__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.range-group__scale {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+}
