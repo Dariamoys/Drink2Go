@@ -40,7 +40,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 const mainPinIcon = L.icon({
-  iconUrl: './img/map-pin.svg',
+  iconUrl: './img/icons/map-pin.svg',
   iconSize: [39, 50],
   iconAnchor: [18, 50],
 });
