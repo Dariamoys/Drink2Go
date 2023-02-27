@@ -9,9 +9,6 @@
     flex-direction: row;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   min-width: 460px;
-  // }
 }
 
 .site-list__link {
@@ -45,66 +42,65 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
+
     &::before {
       display: none;
     }
   }
 }
 
-// @media (min-width: $tablet-width) {
+.site-list__item:not(:last-of-type) {
+  margin-bottom: 42px;
 
-//   &::before {
-//     display: none;
-//   }
-// }
-// }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
 
-// .site-list__item:not(:last-of-type) {
-//   margin-bottom: 42px;
+.site-list__link {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  color: $black;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
 
-//   @media (min-width: $tablet-width) {
-//     margin-bottom: 0;
-//   }
-// }
+  &:active {
+    background-color: #f0ebff;
+  }
 
-// .site-list__link {
-//   display: inline-block;
-//   height: 100%;
-//   color: $black;
-//   font-size: 12px;
-//   text-transform: uppercase;
-//   text-decoration: none;
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-top: 32px;
+    padding-right: 20px;
+    padding-bottom: 32px;
+    padding-left: 20px;
+  }
 
-//   @media (min-width: $tablet-width) {
-//     padding-top: 32px;
-//     padding-right: 20px;
-//     padding-bottom: 32px;
-//     padding-left: 20px;
-//   }
+  &:hover,
+  :focus {
+    color: #7859cf;
+  }
 
-//   &:hover,
-//   :focus {
-//     color: #7859cf;
-//   }
+  &:active {
+    background-color: #f0ebff;
+  }
+}
 
-//   &:active {
-//     background-color: #f0ebff;
-//   }
-// }
+.site-list__link--active {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    color: #7859cf;
 
-// .site-list__link--active {
-//   @media (min-width: $tablet-width) {
-//     position: relative;
-//     color: #7859cf;
-
-//     &::after {
-//       position: absolute;
-//       content: "";
-//       bottom: 0;
-//       left: 0;
-//       width: 100%;
-//       height: 2px;
-//       background-color: #7859cf;
-//     }
-//   }
-// }
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #7859cf;
+    }
+  }
+}

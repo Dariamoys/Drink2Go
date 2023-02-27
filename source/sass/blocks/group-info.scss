@@ -57,6 +57,18 @@
   font-size: 12px;
   line-height: 16px;
   color: $black;
+
+  &:hover {
+    color: #9070ec;
+  }
+
+  &:focus {
+    color: #9070ec;
+  }
+
+  &:active {
+    color: $lilac;
+  }
 }
 
 .group-info__link--phone {

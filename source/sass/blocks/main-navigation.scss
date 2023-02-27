@@ -34,6 +34,10 @@
   background-color: transparent;
   box-sizing: border-box;
 
+  &:active {
+    background-color: #f0ebff;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
