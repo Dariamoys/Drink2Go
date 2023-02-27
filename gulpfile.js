@@ -18,6 +18,7 @@ import browser from 'browser-sync';
 import bemlinter from 'gulp-html-bemlinter';
 import { htmlValidator } from "gulp-w3c-html-validator";
 
+
 const sass = gulpSass(dartSass);
 let isDevelopment = true;
 
@@ -109,10 +110,6 @@ export function startServer(done) {
   done();
 }
 
-// function reloadServer(done) {
-//   browser.reload();
-//   done();
-// }
 
 function watchFiles() {
   gulp.watch('source/sass/**/*.scss', gulp.series(processStyles));
@@ -129,7 +126,7 @@ function compileProject(done) {
     createStack,
     copyAssets,
     optimizeImages,
-    createWebp
+    createWebp,
   )(done);
 }
 
