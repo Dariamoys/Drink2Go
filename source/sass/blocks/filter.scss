@@ -29,7 +29,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: 30px;
   }
 }
@@ -45,7 +45,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: 30px;
   }
 }
@@ -60,7 +60,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: 40px;
   }
 }
@@ -113,4 +113,16 @@
 .filter__button--reset {
   background-color: $white;
   color: $lilac;
+
+  &:hover {
+    color: $white;
+  }
+
+  &:active {
+    color: $white;
+  }
+
+  &:disabled {
+    color: $white;
+  }
 }

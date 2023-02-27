@@ -19,6 +19,27 @@
   }
 }
 
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #bdbdbd;
+}
+
 .social-list__icon:hover {
   color: $lilac;
+}
+
+.social-list__link:hover {
+  background-color: #f0ebff;
+}
+
+.social-list__link:focus {
+  background-color: #f0ebff;
+}
+
+.social-list__link:active {
+  background: rgba(120, 89, 207, 0.25);
 }

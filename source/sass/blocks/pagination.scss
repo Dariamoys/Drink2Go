@@ -36,6 +36,19 @@
   color: $lilac;
   font-size: 16px;
   line-height: 24px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #9070ec;
+  }
+
+  &:focus {
+    background-color: #9070ec;
+  }
+
+  &:active {
+    background-color: #593cac;
+  }
 }
 
 .pagination__text {
@@ -74,6 +87,22 @@
   background-image: url("../../img/bg-icons/pagination-error.svg");
   background-size: 10px 10px;
   background-repeat: no-repeat;
+
+  &:hover {
+    background-image: url("../../img/bg-icons/pagination-error-white.svg");
+  }
+
+  &:focus {
+    background-image: url("../../img/bg-icons/pagination-error-white.svg");
+  }
+
+  &:active {
+    background-image: url("../../img/bg-icons/pagination-error-white.svg");
+  }
+
+  &:disabled {
+    background-image: url("../../img/bg-icons/pagination-error-white.svg");
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
