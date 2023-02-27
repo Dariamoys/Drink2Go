@@ -18,6 +18,14 @@
     height: 1px;
     background-color: #f0ebff;
   }
+
+  &:hover {
+    color: #7859cf;
+  }
+
+  &:active {
+    color: #593cac;
+  }
 }
 
 .html-logo-link::before {

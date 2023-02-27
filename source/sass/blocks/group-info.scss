@@ -14,12 +14,10 @@
     width: 1000%;
     height: 1px;
     background-color: #f0ebff;
-  }
-}
 
-.group-info::before {
-  @media (min-width: $tablet-width) {
-    display: none;
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -34,7 +32,6 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  ;
 }
 
 .group-info__title {

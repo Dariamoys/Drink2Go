@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="icon" href="#">
-  <link rel="icon" href="#" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="#">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/2.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-72x72.png">
   <link rel="manifest" href="./manifest.webmanifest">
   </head>
   <body class="page__body">
@@ -151,7 +151,7 @@
           <a class="slider__button button">Заказать</a>
         </div>
       </div>
-            </div>
+            </div>т
           </li>
         </ul>
         <div class="slider__arrows">
@@ -207,7 +207,7 @@
               </div>
             </div>
             <div class="range__wrapper-inputs">
-                <input class="range__input" type="number" value="0" name="min-price">
+                <input class="range__input" type="number" placeholder="0" name="min-price">
                 <div class="range__input-separator"></div>
                 <input class="range__input range__input--before" type="number" value="900" name="min-price">
             </div>
@@ -252,34 +252,24 @@
           <legend class="filter__title  toggle-group__title">Страна произрастания</legend>
           <ul class="toggle-group__list">
           <li class="toggle-group__item toggle">
-            <label class="toggle__title">
-            <input type="checkbox" name="toggle" class="toggle__input">
-            Бразилия
-          </label>
+            <input type="checkbox" name="country" value="Бразилия" class="toggle__input" id="brazil">
+            <label class="toggle__title" for="brazil">Бразилия</label>
         </li>
         <li class="toggle-group__item toggle">
-          <label class="toggle__title">
-          <input checked type="checkbox" name="toggle" class="toggle__input">
-          Эфиопия
-        </label>
+          <input checked type="checkbox" name="country" value="Эфиопия" class="toggle__input" id="ethiopia">
+          <label class="toggle__title">Эфиопия</label>
       </li>
       <li class="toggle-group__item toggle">
-        <label class="toggle__title">
-        <input type="checkbox" name="toggle" class="toggle__input">
-        Колумбия
-      </label>
+        <input type="checkbox" name="country" value="Колумбия" class="toggle__input" id="colombia" >
+        <label class="toggle__title" for="colombia">Колумбия</label>
     </li>
     <li class="toggle-group__item toggle">
-      <label class="toggle__title">
-      <input type="checkbox" name="toggle" class="toggle__input">
-      Коста-Рика
-    </label>
+      <input type="checkbox" name="country" value=Коста-Рика class="toggle__input" id="costa-rica">
+      <label class="toggle__title" for="costa-rica">Коста-Рика</label>
   </li>
   <li class="toggle-group__item toggle">
-    <label class="toggle__title">
-    <input type="checkbox" name="toggle" class="toggle__input" disabled>
-    Перу
-  </label>
+    <input type="checkbox" name="country" value="Перу" id="peru" class="toggle__input" disabled>
+    <label class="toggle__title" for="peru">Перу</label>
 </li>
         </ul>
         </fieldset>
