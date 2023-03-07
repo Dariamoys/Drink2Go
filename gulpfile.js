@@ -24,7 +24,7 @@ let isDevelopment = true;
 export function processMarkup() {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('dist'))
 }
 
 export function lintBem() {
@@ -47,21 +47,21 @@ export const processStyles = () => {
       csso
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('dist/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
 export function processScripts() {
   return gulp.src('source/js/**/*.js')
     .pipe(terser())
-    .pipe(gulp.dest('build/js'))
+    .pipe(gulp.dest('dist/js'))
     .pipe(browser.stream());
 }
 
 export function optimizeImages() {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(gulpIf(!isDevelopment, squoosh()))
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('dist/img'))
 }
 
 export function createWebp() {
@@ -69,20 +69,20 @@ export function createWebp() {
     .pipe(squoosh({
       webp: {}
     }))
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('dist/img'))
 }
 
 export function optimizeVector() {
   return gulp.src(['source/img/**/*.svg', '!source/img/icons/**/*.svg'])
     .pipe(svgo())
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('dist/img'));
 }
 
 export function createStack() {
   return gulp.src('source/img/icons/**/*.svg')
     .pipe(svgo())
     .pipe(stacksvg())
-    .pipe(gulp.dest('build/img/icons'));
+    .pipe(gulp.dest('dist/img/icons'));
 }
 
 export function copyAssets() {
@@ -93,13 +93,13 @@ export function copyAssets() {
   ], {
     base: 'source'
   })
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('dist'));
 }
 
 export function startServer(done) {
   browser.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'dist'
     },
     cors: true,
     notify: false,
@@ -129,21 +129,21 @@ function compileProject(done) {
   )(done);
 }
 
-function deleteBuild() {
-  return deleteAsync('build');
+function deleteDist() {
+  return deleteAsync('dist');
 }
 
 export function buildProd(done) {
   isDevelopment = false;
   gulp.series(
-    deleteBuild,
+    deleteDist,
     compileProject
   )(done);
 }
 
 export function runDev(done) {
   gulp.series(
-    deleteBuild,
+    deleteDist,
     compileProject,
     startServer,
     watchFiles
