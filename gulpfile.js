@@ -4,7 +4,6 @@ import gulpIf from 'gulp-if';
 import dartSass from "sass";
 import gulpSass from "gulp-sass";
 import postcss from 'gulp-postcss';
-import postUrl from 'postcss-url';
 import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
